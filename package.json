@@ -1,0 +1,30 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "API RESTful para gerenciamento de tarefas",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "nodemon main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusAnciloto/task-manager-api.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "TAREFAS",
+    "CONTROLE"
+  ],
+  "author": "Matheus Anciloto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusAnciloto/task-manager-api/issues"
+  },
+  "homepage": "https://github.com/MatheusAnciloto/task-manager-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
