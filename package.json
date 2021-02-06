@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/app.js",
     "dev": "nodemon main",
-    "run-migrations": "knex --knexfile knexfile.js migrate:latest"
+    "knex-migrate": "knex --knexfile knexfile.js migrate:latest"
   },
   "repository": {
     "type": "git",
