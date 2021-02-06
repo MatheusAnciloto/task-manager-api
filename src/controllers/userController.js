@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const saltRounds = 10;
 
-class UserController {
+const UserController = {
 
 
     async create(req, res){
@@ -40,7 +40,7 @@ class UserController {
             }
         }
         
-    }
+    },
 
 
     async login(req, res){
@@ -82,7 +82,7 @@ class UserController {
         } else {
             return res.status(404).send({message: 'Senha ou usuário incorreto'});
         }
-    }
+    },
 
 
     async update(req, res){
@@ -117,7 +117,7 @@ class UserController {
             return res.status(404).send({message: 'Usuário não encontrado.'});
         }
 
-    }
+    },
     
 
     async delete(req, res){
