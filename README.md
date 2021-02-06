@@ -16,7 +16,6 @@ Para configurar o seu ambiente é necessário:
 
 
 Os testes podem ser realizados de acordo com as rotas criadas no arquivo [routes.js](https://github.com/MatheusAnciloto/task-manager-api/blob/main/src/routes.js).
-    
     - A rota para buscar as tarefas cadastradas possui paginação, você pode acessá-la informando um valor para '*page*' e um '*limit*'. Por exemplo: *http://localhost:8080/tasks?page=1&limit=2*.
 
 
