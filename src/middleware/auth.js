@@ -13,7 +13,7 @@ exports.auth = async function(req, res, next){
     const [ , token] = authHeader.split(' ');
 
 
-    jwt.verify(token, `${process.env.SECRET}`, function(err, decodedToken){
+    jwt.verify(token, `${process.env.TOKEN_SECRET}`, function(err, decodedToken){
         if(!err){
             res.locals.user = decodedToken.id;
             next();

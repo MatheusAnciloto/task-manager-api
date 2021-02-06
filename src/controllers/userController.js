@@ -60,7 +60,7 @@ class UserController {
             try{
                 bcrypt.compare(senha, userMail.senha).then(async function(result){
                     if (result){
-                        const token = jwt.sign({id: userMail.id}, `${process.env.SECRET}`, {
+                        const token = jwt.sign({id: userMail.id}, `${process.env.TOKEN_SECRET}`, {
                             expiresIn: '1d'
                         });
 
