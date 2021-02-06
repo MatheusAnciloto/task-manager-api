@@ -1,13 +1,11 @@
 const express = require('express');
 const cors = require('cors');
+const bodyParser = require('body-parser');
+const routes = require('../src/routes');
 const app = express();
 
 app.use(cors());
-
-app.get('/', (req, res) => {
-    res.status(200).json({message: 'Hello Word!'})
-})
-
-app.listen(process.env.PORT, () => {
-    console.log(`App executando em http://localhost:${process.env.PORT}`)
-})
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(routes);
+app.listen(process.env.PORT)
