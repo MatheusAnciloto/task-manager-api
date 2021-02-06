@@ -14,9 +14,7 @@ class UserController {
             senha
         } = req.body;
         
-        
         const checkMail = await knex('usuarios').select('id').where('email', email); 
-        
         //verificação se a conta de usuário já está cadastrada
         if(checkMail.length > 0){
             return res.status(409).send({message: 'Email já cadastrado'});
